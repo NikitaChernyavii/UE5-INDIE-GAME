@@ -13,7 +13,7 @@ To achieve strict decoupling and eliminate expensive casting between actors, com
 ### Architecture Framework Overview
 Below is the core class and interface setup used throughout the project:
 
-https://github.com/NikitaChernyavii/UE5-INDIE-GAME/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-16%20162409.png
+![Project C++ Architecture](Снимок%20экрана%202026-06-16%20162409.png)
 
 ### Player-to-Object Raycast (`PlayerCharacter.cpp`)
 Every frame, the character performs a line trace extending `InteractDistance` (250 units) to dynamically detect interactable elements in the environment and cache the active reference:
@@ -144,12 +144,11 @@ While C++ establishes the rigid technical foundation, **Blueprints** are utilize
 ### 🔦 Flashlight Toggle Logic
 Manages input action mapping via the Enhanced Input System to smoothly toggle spotlight visibility and trigger context-aware audio effects:
 
-[(https://github.com/NikitaChernyavii/UE5-INDIE-GAME/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-16%20162438.png)]
-### 🔑 Key-Lock Narrative System (Inventory Validation)
+![Flashlight Blueprint Graph](Снимок%20экрана%202026-06-16%20162438.png)### 🔑 Key-Lock Narrative System (Inventory Validation)
+
 Displays real-time screen prompts when a locked actor is approached, handles item validation against the character's inventory arrays, and manages actor lifecycles upon successful entry:
 
-[(https://github.com/NikitaChernyavii/UE5-INDIE-GAME/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-06-16%20162511.png)]
----
+![Door Interaction Blueprint Graph](Снимок%20экрана%202026-06-16%20162511.png)---
 
 ## 🚀 Key Takeaways & Optimization Highlights
 * **Zero Casting Overhead:** Code structure is entirely decoupled. The player never casts directly to interactable actors, routing all actions through interface contracts.
