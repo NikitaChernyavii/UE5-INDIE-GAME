@@ -166,4 +166,4 @@ Displays real-time screen prompts when a locked actor is approached, handles ite
 
 | Before (Camera Clipping) | After (Smooth Collision Fixed) |
 |---|---|
-| ![Clipping Bug](пут_к_твоему_скриншоту_141128.jpg) | ![Fixed Camera](путь_к_твоему_скриншоту_164918.jpg) |
+| ![Clipping Bug](Снимок%20экрана%202026-06-19%20141128.jpg) | ![Fixed Camera](Снимок%20экрана%202026-06-19%20164918.jpg) |
