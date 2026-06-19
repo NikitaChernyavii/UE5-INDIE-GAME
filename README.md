@@ -154,3 +154,16 @@ Displays real-time screen prompts when a locked actor is approached, handles ite
 * **Zero Casting Overhead:** Code structure is entirely decoupled. The player never casts directly to interactable actors, routing all actions through interface contracts.
 * **Camera Jitter Resolution:** Fixed standard view bugs during inspection states by programmatically forcing `bPauseAnims = true` on the player character.
 * **Input Spam Protection:** Active state flags (`bIsReturning`, `bIsInspecting`) discard premature inputs, preserving physical consistency and preventing collision glitches.
+
+* ---
+
+## 🛠️ DevLog & Technical Bugfixes (19 June 2026)
+
+### Camera Collision & Clipping Fix
+* **The Issue:** When standing close to geometry (walls/doors) and looking sharply downward, the first-person camera would glitch, clip through meshes, and warp outside the level bounds.
+* **The Culprit:** The `SpringArmComponent` had `Use Pawn Control Rotation` enabled. In tight spaces, this inherited rotation heavily conflicted with the spring arm's built-in collision solver.
+* **The Solution:** Disabled the checkbox, allowing the camera to correctly respect line-traces and slide smoothly against wall geometry without breaking immersion.
+
+| Before (Camera Clipping) | After (Smooth Collision Fixed) |
+|---|---|
+| ![Clipping Bug](пут_к_твоему_скриншоту_141128.jpg) | ![Fixed Camera](путь_к_твоему_скриншоту_164918.jpg) |
