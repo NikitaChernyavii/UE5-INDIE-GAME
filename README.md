@@ -178,4 +178,4 @@ Displays real-time screen prompts when a locked actor is approached, handles ite
 
 | Flashlight Test | Interaction System |
 |---|---|
-| <video src="https://github.com/NikitaChernyavii/UE5-INDIE-GAME/blob/main/flashlight.mp4?raw=true" width="100%"></video> | <video src="https://github.com/NikitaChernyavii/UE5-INDIE-GAME/blob/main/interaction.mp4?raw=true" width="100%"></video> |
+| ![Flashlight](flashlight.gif) | ![Interaction](interaction.gif) |
