@@ -167,3 +167,15 @@ Displays real-time screen prompts when a locked actor is approached, handles ite
 | Before (Camera Clipping) | After (Smooth Collision Fixed) |
 |---|---|
 | ![Clipping Bug](Снимок%20экрана%202026-06-19%20141128.png) | ![Fixed Camera](Снимок%20экрана%202026-06-19%20164918.png) |
+
+---
+
+## 🎮 Gameplay Mechanics (20 June 2026)
+
+### Interaction & Flashlight System
+* **Flashlight Logic:** Added a dynamic, toggleable flashlight that serves as a primary survival tool.
+* **Context-Aware UI:** Implemented a proximity-based interaction system. The **[E]** prompt appears smoothly only when the player is within range of an interactable object, keeping the HUD clean and immersive.
+
+| Flashlight Test | Interaction System |
+|---|---|
+| <video src="Unreal Engine 5 2026.06.20 - 19.24.03.02.mp4" width="300" controls></video> | <video src="Unreal Engine 5 2026.06.20 - 19.24.59.03.mp4" width="300" controls></video> |
