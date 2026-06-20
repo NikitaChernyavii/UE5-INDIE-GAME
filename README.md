@@ -178,4 +178,4 @@ Displays real-time screen prompts when a locked actor is approached, handles ite
 
 | Flashlight Test | Interaction System |
 |---|---|
-| <video src="Unreal Engine 5 2026.06.20 - 19.24.03.02.mp4" width="300" controls></video> | <video src="Unreal Engine 5 2026.06.20 - 19.24.59.03.mp4" width="300" controls></video> |
+| <video src="https://github.com/NikitaChernyavii/UE5-INDIE-GAME/blob/main/flashlight.mp4?raw=true" width="100%"></video> | <video src="https://github.com/NikitaChernyavii/UE5-INDIE-GAME/blob/main/interaction.mp4?raw=true" width="100%"></video> |
