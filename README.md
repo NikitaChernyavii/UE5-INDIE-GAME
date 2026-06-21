@@ -179,3 +179,20 @@ Displays real-time screen prompts when a locked actor is approached, handles ite
 | Flashlight Test | Interaction System |
 |---|---|
 | ![Flashlight](flashlight.gif) | ![Interaction](interaction.gif) |
+
+## Interaction & Inspection System
+
+I have developed a modular interaction and inspection system designed to enhance player focus and provide clear UX feedback.
+
+---
+
+## 🚀 Gameplay Mechanics (Inspect) (21 June 2026)
+
+### Technical Features:
+* **Dynamic Crosshair:** The interaction cursor scales and increases in brightness when detecting an interactable object.
+* **3D Item Inspection:** Implemented a smooth inspection mode that allows for precise object rotation.
+* **Visual Focus (Post-Processing):** 
+    * The background desaturates (becomes black and white) during item inspection using a custom Post-Process material.
+    * Utilized **Custom Depth** buffers to ensure the inspected item retains its original color and pops against the background.
+
+![Interaction Demo](inspect_dot.gif)
