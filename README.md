@@ -208,19 +208,17 @@ I have implemented a scalable puzzle framework designed for high maintainability
 * **Audio Integration:** Fully implemented spatialized step sounds mapped to character mesh movement and puzzle feedback sounds.
 * **Code Maintenance:** Conducted a comprehensive refactor to remove legacy assets, optimize performance, and ensure a clean, "garbage-free" codebase.
 
-### Visual & Logic Demo
+| Visual | Demo |
 |---|---|
 | ![Clipping Bug](Снимок%20экрана%202026-06-24%20163658.png) | ![Fixed Camera](Снимок%20экрана%202026-06-24%20193121.png) |
 
 ![Puzzle Logic Demo](puzzleSystem.gif)
 
----
 
 ## 🛠 Current Mechanics Checklist
 ### Player & Survival
 - [x] **Locomotion:** WASD movement, Head-Bob, and Character Animation.
 - [x] **Flashlight:** Dynamic toggle with a 5% dynamic failure chance; manual recovery via [Space] combo.
-- [x] **Night Vision Camera:** Real-time visibility depth, battery management, and UI state tracking.
 - [x] **Footstep System:** Mesh-synced audio mapping.
 
 ### Interaction & UX
