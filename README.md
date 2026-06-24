@@ -196,3 +196,40 @@ I have developed a modular interaction and inspection system designed to enhance
     * Utilized **Custom Depth** buffers to ensure the inspected item retains its original color and pops against the background.
 
 ![Interaction Demo](inspect_dot.gif)
+
+---
+
+## 🧩 Puzzle & Audio System Architecture (24 June 2026)
+I have implemented a scalable puzzle framework designed for high maintainability.
+
+### Technical Implementation:
+* **Interface-driven Design:** Used `BP_Puzzle` as a Blueprint Interface to decouple puzzle logic from the central manager, ensuring easy scalability.
+* **Puzzle Manager:** Centralized `BP_PuzzleManager` handles state tracking and event execution, ensuring complex sequences work reliably.
+* **Audio Integration:** Fully implemented spatialized step sounds mapped to character mesh movement and puzzle feedback sounds.
+* **Code Maintenance:** Conducted a comprehensive refactor to remove legacy assets, optimize performance, and ensure a clean, "garbage-free" codebase.
+
+### Visual & Logic Demo
+|---|---|
+| ![Clipping Bug](Снимок%20экрана%202026-06-24%20163658.png) | ![Fixed Camera](Снимок%20экрана%202026-06-24%20193121.png) |
+
+![Puzzle Logic Demo](puzzleSystem.gif)
+
+---
+
+## 🛠 Current Mechanics Checklist
+### Player & Survival
+- [x] **Locomotion:** WASD movement, Head-Bob, and Character Animation.
+- [x] **Flashlight:** Dynamic toggle with a 5% dynamic failure chance; manual recovery via [Space] combo.
+- [x] **Night Vision Camera:** Real-time visibility depth, battery management, and UI state tracking.
+- [x] **Footstep System:** Mesh-synced audio mapping.
+
+### Interaction & UX
+- [x] **Interaction System:** Proximity-based [E] prompt.
+- [x] **Inspection Mode:** Smooth 3D object rotation.
+- [x] **Visual Focus:** Custom Post-Process material with **Custom Depth buffers** to isolate inspected items.
+- [x] **Dynamic Crosshair:** Adaptive cursor (scale & brightness) for UX feedback.
+
+### Puzzle & World Logic
+- [x] **Modular Puzzle System:** Interface-based design (`BP_Puzzle`).
+- [x] **Puzzle Manager:** Centralized state control.
+- [x] **Door Logic:** Multi-state system (Locked, Fake, Standard).
